@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Localització Reus</title>
+    <link rel="stylesheet" href="leaflet.css">
+    <style>
+        #map {
+            height: 400px;
+            max-width: 600px; /* Ajusta l'amplada màxima del mapa segons les teves preferències */
+            margin: 0 auto; /* Centra el mapa horitzontalment */
+            border: 1px solid #000; /* Afegir un requadre al voltant del mapa */
+        }
+
+    </style>
+</head>
+
+<body>
+ <header class="header-noticies">
+  <div class="logo">
+    <a href="principal.html">
+      <img src="logo-ajuntament.png" alt="Logo" class="logo-imatge" />
+    </a>
+  </div>
+  <h1 class="titol">Localització</h1>
+  <nav class="menu">
+    <ul>
+      <li><a href="principal.html">Inici</a></li>
+      <li><a href="serveis.html">Serveis</a></li>
+      <li><a href="noticies.html">Notícies</a></li>
+      <li><a href="contacte.html">Contacte</a></li>
+     
+    </ul>
+  </nav>
+</header>
+<body>
+    <div id="map"></div>
+
+    <script src="leaflet.js"></script>
+    <script>
+        // Inicialitzar el mapa
+        var map = L.map('map').setView([41.15834, 1.10606], 16);
+
+        // Afegir capa de mapa base
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 18,
+        }).addTo(map);
+
+        // Afegir marcadors amb xinxetes
+        var markers = [
+            {
+                name: "Plaça del Prim",
+                lat: 41.1561,
+                lon: 1.1069,
+                iconUrl: "imatges/icona.png"
+            },
+            {
+                name: "Museu del Vermut",
+                lat: 41.1568,
+                lon: 1.1021,
+                iconUrl: "imatges/icona.png"
+            },
+            {
+                name: "Plaça de les Baldufes",
+                lat: 41.1574,
+                lon: 1.1089,
+                iconUrl: "imatges/icona.png"
+            },
+            {
+                name: "Plaça Llibertat",
+                lat: 41.1565,
+                lon: 1.1066,
+                iconUrl: "imatges/icona.png"
+            },
+            // Afegir aquí els altres marcadors
+        ];
+
+        for (var i = 0; i < markers.length; i++) {
+            var marker = L.marker([markers[i].lat, markers[i].lon], {
+                icon: L.icon({
+                    iconUrl: markers[i].iconUrl,
+                    iconSize: [32, 37],
+                    iconAnchor: [16, 37],
+                    popupAnchor: [0, -37]
+                })
+            }).addTo(map);
+            marker.bindPopup(markers[i].name);
+        }
+    </script>
+</section>
+<footer class="footer">
+  <div class="footer-section">
+    <a href="principal.html">
+      <img src="logo-ajuntament.png" alt="Logo Ajuntament" class="footer-logo">
+    </a>
+  </div>
+  <div class="footer-section">
+    <h4 class="footer-heading">Serveis</h4>
+    <ul class="footer-list">
+      <li>Informació turística</li>
+      <li>Tràmits municipals</li>
+      <li>Esdeveniments culturals</li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <div class="xarxes-socials">
+      <a href="https://www.twitter.com/ajuntamentreus" class="twitter">Twitter</a>
+      <a href="https://www.facebook.com/ajuntamentreus" class="facebook">Facebook</a>
+      <a href="https://www.instagram.com/ajuntamentreus" class="instagram">Instagram</a>
+    </div>
+  </div>
+  <div class="footer-section">
+    <p class="footer-copyright">
+      &copy; 2023 Ajuntament de Reus. Tots els drets reservats.
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>

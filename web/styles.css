@@ -1,0 +1,386 @@
+/* Estil per la capçalera */
+header {
+  display: flex; /* Per posar els elements en una fila */
+  align-items: center; /* Centrar verticalment els elements */
+  justify-content: space-between; /* Posar espai entre el logo i el menú */
+  background-color: #ffffff; /* Fons blanc */
+  height: 80px; /* Altura de la capçalera */
+  padding: 0 20px; /* Padding als costats per separar dels marges de la pàgina */
+}
+
+/* Estil per al logo */
+.logo img {
+  height: 150px; /* Alçada de la imatge */
+}
+
+/* Estil per al menú de navegació */
+nav ul {
+  list-style: none; /* Eliminar la llista de punts */
+  display: flex; /* Per posar els elements en una fila */
+}
+
+nav li {
+  margin-left: 20px; /* Separació entre cada element del menú */
+}
+
+nav a {
+  text-decoration: none; /* Sense subratllat en els enllaços */
+  color: #333333; /* Color del text del menú */
+  font-size: 18px; /* Mida del text del menú */
+  font-weight: 600; /* Negreta */
+}
+/* Estil per la secció HERO */
+.hero {
+  background-image: url("tronada.jpg"); /* Imatge de fons */
+  background-position: center center; /* Centrar la imatge */
+  background-size: cover; /* Escalar la imatge per cobrir la secció */
+  height: 400px; /* Altura de la secció */
+  display: flex; /* Per posar el contingut en una columna */
+  align-items: center; /* Centrar verticalment el contingut */
+}
+
+.hero-content {
+  max-width: 800px; /* Ample màxim del contingut */
+  margin: 0 auto; /* Centrar horitzontalment el contingut */
+  text-align: center; /* Centrar el text */
+  color: #000000; /* Color del text */
+}
+
+.hero h1 {
+  font-size: 48px; /* Mida del títol */
+  margin-bottom: 20px; /* Separació entre el títol i la descripció */
+}
+
+.hero p {
+  font-size: 24px; /* Mida de la descripció */
+  margin-bottom: 40px; /* Separació entre la descripció i la crida a l'acció */
+}
+
+/* Estil per la crida a l'acció */
+.cta-button {
+  display: inline-block; /* Per posar el botó en línia amb el text */
+  background-color: #ff6600; /* Color de fons del botó */
+  color: #ffffff; /* Color del text del botó */
+  font-size: 20px; /* Mida del text del botó */
+  padding: 12px 24px; /* Padding del botó */
+  border-radius: 4px; /* Arrodonir les cantonades del botó */
+  text-decoration: none; /* Sense subratllat en el botó */
+}
+
+.cta-button:hover {
+  background-color: #cc5500; /* Color de fons del botó quan passa el ratolí per sobre */
+}
+.two-columns {
+  display: flex; /* Utilitzar flexbox per fer dues columnes */
+  flex-wrap: wrap; /* Fer que les columnes es mostrin en dues línies quan la pantalla és massa estreta */
+}
+
+.column-left {
+  flex: 1; /* Fer que la primera columna ocupi una part flexible de l'espai disponible */
+}
+
+.image-container {
+  max-width: 100%; /* Fer que la imatge no surti del seu contenidor */
+  height: auto; /* Fer que l'alçada de la imatge es redimensioni proporcionalment */
+}
+
+.column-right {
+  flex: 1; /* Fer que la segona columna ocupi una part flexible de l'espai disponible */
+  padding: 0 20px; /* Afegir espai horitzontal a la segona columna */
+  text-align: justify; /* Justificar el text a la segona columna */
+}
+
+.column-right h2 {
+  font-size: 36px; /* Mida del títol */
+  margin-top: 0; /* Eliminar el marge superior del títol */
+}
+
+.column-right p {
+  font-size: 18px; /* Mida de la descripció */
+  line-height: 1.5; /* Espai entre línies de la descripció */
+}
+
+.column-right a {
+  display: inline-block; /* Fer que l'enllaç es mostrin en línia amb el text */
+  background-color: #ff6600; /* Color de fons de l'enllaç */
+  color: #ffffff; /* Color del text de l'enllaç */
+  font-size: 18px; /* Mida del text de l'enllaç */
+  padding: 12px 24px; /* Padding de l'enllaç */
+  border-radius: 4px; /* Arrodonir les cantonades de l'enllaç */
+  text-decoration: none; /* Sense subratllat en l'enllaç */
+}
+
+.column-right a:hover {
+  background-color: #cc5500; /* Color de fons de l'enllaç quan passa el ratolí per sobre */
+}
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0; /* Afegir espai vertical a la secció */
+  max-width: 1200px; /* Establir una mida màxima per a la secció */
+  margin: 0 auto; /* Centrar la secció en el seu contenidor */
+}
+
+.column-left {
+  flex: 1;
+}
+
+.image-container {
+  max-width: 100%;
+  height: auto;
+}
+
+.column-right {
+  flex: 1;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.column-right h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.column-right p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.column-right a {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.column-right a:hover {
+  background-color: #cc5500;
+}
+.gallery {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.gallery .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery .images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery .images img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+  
+
+
+
+INICI 
+/* Estils per la secció del header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Estils per la navegació */
+nav {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estils per la secció del hero */
+.hero {
+  background-image: src('imatges/pan');
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  padding: 100px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estils per la secció de contingut principal */
+.content {
+  padding: 50px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 5px;
+}
+
+.xarxes-socials {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.xarxes-socials a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-section:last-child .xarxes-socials {
+  margin-right: 0;
+}
+.xarxes-socials .twitter {
+  color: #1DA1F2;
+}
+
+.xarxes-socials .facebook {
+  color: #1877F2;
+}
+
+.xarxes-socials .instagram {
+  color: #C13584;
+}
+.xarxes-socials a {
+  border: 2px solid;
+  padding: 4px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.xarxes-socials .twitter {
+  border-color: #1DA1F2;
+}
+
+.xarxes-socials .facebook {
+  border-color: #1877F2;
+}
+
+.xarxes-socials .instagram {
+  border-color: #C13584;
+}
+
+
+.footer-copyright {
+  font-size: 14px;
+}
+/* Estils per pantalla gran */
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer-section {
+    margin-right: 20px;
+  }
+}
+
+/* Estils per pantalla mitjana */
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+/* Estils per pantalla petita */
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    width: 150px;
+  }
+}

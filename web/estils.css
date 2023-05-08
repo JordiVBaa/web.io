@@ -1,0 +1,324 @@
+.noticies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna {
+  flex-basis: 48%;
+}
+
+.noticia {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.noticia img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.noticia:hover img {
+  transform: scale(1.1);
+}
+
+.noticia h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.noticia p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.header-noticies {
+  background-color: #F07E22;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-align: left;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.logo-imatge {
+  width: 100px;
+  height: auto;
+}
+
+.titol {
+  color: #FFFFFF;
+  margin: 0 20px;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #CCCCCC;
+}
+/* Estil per als enllaços de "Més informació" */
+.mes-informacio {
+  color: #FF6600; /* Color taronja */
+  text-decoration: none; /* Sense subratllat */
+}
+
+.mes-informacio:hover {
+  text-decoration: underline; /* Subratllat en passar el ratolí per sobre */
+}
+.noticia{
+  width: 700px; /* Amplada de la imatge */
+  height: autopx; /* Alçada de la imatge */
+  object-fit: cover; /* Ajustar l'imatge dins dels límits */
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 5px;
+}
+
+.xarxes-socials {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.xarxes-socials a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.footer-section:last-child .xarxes-socials {
+  margin-right: 0;
+}
+.xarxes-socials .twitter {
+  color: #1DA1F2;
+}
+
+.xarxes-socials .facebook {
+  color: #1877F2;
+}
+
+.xarxes-socials .instagram {
+  color: #C13584;
+}
+
+.xarxes-socials a {
+  border: 2px solid;
+  padding: 4px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.xarxes-socials .twitter {
+  border-color: #1DA1F2;
+}
+
+.xarxes-socials .facebook {
+  border-color: #1877F2;
+}
+
+.xarxes-socials .instagram {
+  border-color: #C13584;
+}
+
+.footer-copyright {
+  font-size: 14px;
+}
+
+.contacte {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.contacte h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contacte p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contacte form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.contacte label {
+  font-weight: bold;
+}
+
+.contacte input,
+.contacte textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contacte input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contacte input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.serveis {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.serveis h2 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.serveis ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.serveis li {
+  margin-bottom: 10px;
+}
+
+.serveis a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.serveis a:hover {
+  text-decoration: underline;
+}
+.serveis {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.serveis h2 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.serveis ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.serveis li {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.serveis img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.servei-info {
+  flex-grow: 1;
+}
+
+.servei-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.servei-info p {
+  margin-bottom: 0;
+}
+/* Estils per pantalla gran */
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer-section {
+    margin-right: 20px;
+  }
+}
+
+/* Estils per pantalla mitjana */
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+/* Estils per pantalla petita */
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    width: 150px;
+  }
+}
